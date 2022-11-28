@@ -12,7 +12,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:text="@string/fruit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:backgroundTint="@color/white"

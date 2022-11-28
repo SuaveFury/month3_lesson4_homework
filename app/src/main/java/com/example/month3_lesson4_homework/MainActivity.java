@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements itemClick {
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements itemClick {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recycler_view);
-
 
 
 
@@ -65,9 +65,8 @@ public class MainActivity extends AppCompatActivity implements itemClick {
 
     @Override
     public void itemClickListener(String name) {
-        TextView fruit = findViewById(R.id.fruit);
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        intent.putExtra("Result", fruit.getText().toString());
+        intent.putExtra("Result", name);
         startActivity(intent);
     }
 }

@@ -30,6 +30,7 @@ public class FruitAndVegetablesAdapter extends RecyclerView.Adapter<FruitAndVege
         holder.itemContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 itemClick.itemClickListener(fruitVegetables.get(position));
             }
         });

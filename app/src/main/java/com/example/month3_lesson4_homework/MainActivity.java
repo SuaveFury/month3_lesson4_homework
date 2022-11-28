@@ -67,6 +67,6 @@ public class MainActivity extends AppCompatActivity implements itemClick {
     public void itemClickListener(String name) {
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         intent.putExtra("Result", name);
-        startActivity(intent);
+
     }
 }

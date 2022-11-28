@@ -1,4 +1,5 @@
 package com.example.month3_lesson4_homework;
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +26,7 @@ public class FruitAndVegetablesAdapter extends RecyclerView.Adapter<FruitAndVege
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FruitAndVegetablesViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull FruitAndVegetablesViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.bind(fruitVegetables.get(position));
         holder.itemContainer.setOnClickListener(new View.OnClickListener() {
             @Override
